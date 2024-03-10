@@ -1,0 +1,41 @@
+﻿function outer(a) {
+    document.write('outer () : function called <br>');
+    function inner(b) {
+        document.write('inner () : function called');
+        return a + b;
+    }
+    return inner;
+     /*inner();*/
+}
+
+/*inner();*/
+
+var result = outer(10)(20);
+document.write('<br>');
+
+document.write(`Returned Result : ${result} <br>`);
+
+// multiply (2,3,4) => 24
+function multiply(a, b, c) {
+    return a * b * c;
+}
+
+result = multiply(2, 3, 4);
+document.write(`multiply (2,3,4) result : ${result} <br>`);
+
+// multiply (2,3,4)  => 24
+
+function multiplya(a) {
+    function multiplyb(b) {
+        function multiplyc(c) {
+            return a * b * c;
+
+        }
+        return multiplyc;
+    }
+    return multiplyb;
+
+}
+
+result = multiplya(2)(3)(4);
+document.write(`multiplya(2,3,4) Result :${result} <br> `);
