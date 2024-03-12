@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #div1 {
+/*            border: 2px solid red;
+*/            border-radius: 21px;
+            height: 168px;
+            width: 190px;
+        }
+        .row{
+            margin-left:5px;
+            margin-top:3px;
+            padding-left:20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Add Two Number</h2>
+    <table>
+        <tr>
+            <td>First number</td>
+            <td>
+                <input type="text" id="first" />
+            </td>
+        </tr>
+        <tr>
+            <td>Second number</td>
+            <td>
+                <input type="text" id="second" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1"></td>
+            <td>
+                <input type="button" id="result" value="Add Two Numbers" onclick="add()" />
+            </td>
+        </tr>
+        <tr>
+            <td>Result</td>
+            <td>
+                <input type="text" id="finalresult" />
+            </td>
+        </tr>
+    </table>
+    <br />
+    <input type="text" value="plain" placeholder="enter value" />
+    <!--<div id="div1">
+            <table>
+                <tr class="row">
+                    <td>
+                        <input type="button" id="result" value="%" onclick="#" />
+                    </td>
+                    <td>
+                        <input type="button" id="result" value="Clear" onclick="#" />
+                    </td>
+                    <td>
+                        <input type="button" id="result" value="back" onclick="#" />
+                    </td>
+                    <td>
+                        <input type="button" id="result" value="/" onclick="#" />
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td>
+                        <input type="button" id="sn" value="7" onclick="add()" />
+                    </td>
+                    <td>
+                        <input type="button" id="result" value="8" onclick="#" />
+                    </td>
+                    <td>
+                        <input type="button" id="result" value="9" onclick="#" />
+                    </td>
+                    <td>
+                        <input type="button" id="result" value="*" onclick="#" />
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td>
+                        <input type="button" id="result" value="4" onclick="#" />
+                    </td>
+                    <td>
+                        <input type="button" id="result" value="5" onclick="#" />
+                    </td>
+                    <td>
+                        <input type="button" id="result" value="6" onclick="#" />
+                    </td>
+                    <td>
+                        <input type="button" id="result" value="-" onclick="#" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" id="result" value="1" onclick="#" />
+                    </td>
+                    <td>
+                        <input type="button" id="result" value="2" onclick="#" />
+                    </td>
+                    <td>
+                        <input type="button" id="result" value="3" onclick="#" />
+                    </td>
+                    <td>
+                        <input type="button" id="result" value="+" onclick="#" />
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td>
+                        <input type="button" id="result" value="" onclick="#" />
+                    </td>
+                    <td>
+                        <input type="button" id="result" value="0" onclick="#" />
+                    </td>
+                    <td>
+                        <input type="button" id="result" value="" onclick="#" />
+                    </td>
+                    <td>
+                        <input type="button" id="result" value="=" onclick="#" />
+                    </td>
+
+
+
+
+
+
+
+
+    </table>
+        </div>-->
+    
+
+    <script>
+        function add() {
+            var first = document.getElementById('first').value;
+            var second = document.getElementById('second').value;
+
+            var result = parseInt(first) + parseInt(second);
+            document.getElementById('finalresult').value = result;
+
+        }
+    </script>
+    <script>
+            //function add() {
+            //    var seven = document.getElementById('sn').value;
+            //    var result = parseInt(seven);
+
+            //    document.getElementById('plain').value = result;
+            //}
+    </script>
+</body>
+</html>
