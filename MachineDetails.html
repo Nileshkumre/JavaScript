@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h2>Machine details</h2>
+
+    <p>User Agent: <span id="userAgent"></span></p>
+    <p>Platform: <span id="platform"></span></p>
+    <p>Screen Width: <span id="screenWidth"></span></p>
+    <p>Screen Height: <span id="screenHeight"></span></p>
+
+    <script src="Scripts/jQuery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var userAgent = navigator.userAgent;
+            var platform = navigator.platform;
+            var screenWidth = screen.width;
+            var screenHeight = screen.height;
+
+            $("#userAgent").text(userAgent);
+            $("#platform").text(platform);
+            $("#screenWidth").text(screenWidth);
+            $("#screenHeight").text(screenHeight);
+        });
+    </script>
+
+
+
+
+</body>
+</html>
